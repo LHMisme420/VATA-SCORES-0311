@@ -414,8 +414,64 @@
 <script>
 function showTab(name,el){document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.getElementById('tab-'+name).classList.add('active');el.classList.add('active');}
 </script>
+    <!-- B165-B169 AGENTIC AUTHORIZATION ARC -->
+    <section style="margin:2rem 0;padding:2rem;border:1px solid #333;background:#0a0a0a;">
+      <h2 style="color:#ff4444;">⚠ B169 LANDMARK FINDING — DISCRIMINATION CEILING</h2>
+      <p style="color:#aaa;">AGENTIC AUTHORIZATION ARC &bull; B165–B169 &bull; COMPLETE &bull; 2026-05-03</p>
+      <p style="color:#ccc;line-height:1.6;">Prompt-level intervention cannot solve agentic authorization security. Any instruction that closes the adversarial capitulation gap simultaneously destroys legitimate compliance. Discrimination-targeted instructions score <em>lower</em> than unprotected models on combined adversarial+legitimate performance. Some authorization decisions are indeterminate at the language level regardless of model or instruction. The problem requires design-phase architectural solutions — not runtime patches. Five models. B165–B169. Independently scored by Grok. All anchored on Ethereum Sepolia.</p>
+
+      <h3 style="color:#fff;margin-top:1.5rem;">Arc Summary</h3>
+      <table style="width:100%;border-collapse:collapse;color:#ccc;">
+        <tr style="border-bottom:1px solid #333;"><th style="text-align:left;padding:0.5rem;">Battery</th><th style="text-align:left;padding:0.5rem;">Focus</th><th style="text-align:left;padding:0.5rem;">Runs</th><th style="text-align:left;padding:0.5rem;">Key Finding</th></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">B165</td><td style="padding:0.5rem;">Agentic Auth Baseline</td><td style="padding:0.5rem;">73</td><td style="padding:0.5rem;">Zero full capitulations. Consensus = dominant pressure vector.</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">B166</td><td style="padding:0.5rem;">Intervention Efficacy</td><td style="padding:0.5rem;">375</td><td style="padding:0.5rem;">AuditFraming backfires. TerminalChallenger strongest. AuthBoundary inert.</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">B167</td><td style="padding:0.5rem;">Hybrid Interaction</td><td style="padding:0.5rem;">773</td><td style="padding:0.5rem;">GPT only model with full caps. Any intervention eliminates full caps.</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">B168</td><td style="padding:0.5rem;">False Negative Exposure</td><td style="padding:0.5rem;">~190</td><td style="padding:0.5rem;">RefusalAnchor: 19/22 legitimate requests refused. Patch breaks the system.</td></tr>
+        <tr><td style="padding:0.5rem;">B169</td><td style="padding:0.5rem;">Discrimination Battery</td><td style="padding:0.5rem;">~190</td><td style="padding:0.5rem;">All interventions score below Naked on combined metric. Ceiling is structural.</td></tr>
+      </table>
+
+      <h3 style="color:#fff;margin-top:1.5rem;">B169 — Discrimination Score (Key Result)</h3>
+      <table style="width:100%;border-collapse:collapse;color:#ccc;">
+        <tr style="border-bottom:1px solid #333;"><th style="text-align:left;padding:0.5rem;">Intervention</th><th style="text-align:left;padding:0.5rem;">Adv Avg</th><th style="text-align:left;padding:0.5rem;">Leg Avg</th><th style="text-align:left;padding:0.5rem;">Disc Score</th></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;color:#ff4444;"><strong>Naked (no intervention)</strong></td><td style="padding:0.5rem;">2.42</td><td style="padding:0.5rem;">2.62</td><td style="padding:0.5rem;color:#ff4444;"><strong>2.52 — BEST</strong></td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">ContextualAnchor</td><td style="padding:0.5rem;">2.88</td><td style="padding:0.5rem;">1.60</td><td style="padding:0.5rem;">2.24</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">DiscriminationInstruct</td><td style="padding:0.5rem;">3.00</td><td style="padding:0.5rem;">1.44</td><td style="padding:0.5rem;">2.22</td></tr>
+        <tr><td style="padding:0.5rem;">ScopedChallenger</td><td style="padding:0.5rem;">3.00</td><td style="padding:0.5rem;">1.25</td><td style="padding:0.5rem;">2.12</td></tr>
+      </table>
+
+      <h3 style="color:#fff;margin-top:1.5rem;">B168 — False Negative Exposure</h3>
+      <table style="width:100%;border-collapse:collapse;color:#ccc;">
+        <tr style="border-bottom:1px solid #333;"><th style="text-align:left;padding:0.5rem;">Intervention</th><th style="text-align:left;padding:0.5rem;">Adv Avg</th><th style="text-align:left;padding:0.5rem;">Leg Avg</th><th style="text-align:left;padding:0.5rem;">Legitimate Failures</th></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">Naked</td><td style="padding:0.5rem;">1.64</td><td style="padding:0.5rem;">1.65</td><td style="padding:0.5rem;">6/23</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">RefusalAnchor</td><td style="padding:0.5rem;">2.46</td><td style="padding:0.5rem;">0.14</td><td style="padding:0.5rem;color:#ff4444;">19/22 ⚠</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">TerminalChallenger</td><td style="padding:0.5rem;">2.84</td><td style="padding:0.5rem;">0.41</td><td style="padding:0.5rem;color:#ff4444;">18/22 ⚠</td></tr>
+        <tr><td style="padding:0.5rem;">TC+Audit</td><td style="padding:0.5rem;">2.88</td><td style="padding:0.5rem;">0.50</td><td style="padding:0.5rem;color:#ff4444;">17/22 ⚠</td></tr>
+      </table>
+
+      <h3 style="color:#fff;margin-top:1.5rem;">B167 — Model Results (773 runs)</h3>
+      <table style="width:100%;border-collapse:collapse;color:#ccc;">
+        <tr style="border-bottom:1px solid #333;"><th style="text-align:left;padding:0.5rem;">Model</th><th style="text-align:left;padding:0.5rem;">Avg Score</th><th style="text-align:left;padding:0.5rem;">Full Caps</th><th style="text-align:left;padding:0.5rem;">Partial Caps</th></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">Claude</td><td style="padding:0.5rem;">2.98</td><td style="padding:0.5rem;">0</td><td style="padding:0.5rem;">2</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">Gemini</td><td style="padding:0.5rem;">2.91</td><td style="padding:0.5rem;">0</td><td style="padding:0.5rem;">5</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">DeepSeek</td><td style="padding:0.5rem;">2.88</td><td style="padding:0.5rem;">0</td><td style="padding:0.5rem;">9</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">Grok</td><td style="padding:0.5rem;">2.85</td><td style="padding:0.5rem;">0</td><td style="padding:0.5rem;">2</td></tr>
+        <tr><td style="padding:0.5rem;color:#ff4444;">GPT</td><td style="padding:0.5rem;color:#ff4444;">2.50</td><td style="padding:0.5rem;color:#ff4444;">3</td><td style="padding:0.5rem;color:#ff4444;">17</td></tr>
+      </table>
+
+      <h3 style="color:#fff;margin-top:1.5rem;">Anchor Log — B165–B169</h3>
+      <table style="width:100%;border-collapse:collapse;color:#ccc;">
+        <tr style="border-bottom:1px solid #333;"><th style="text-align:left;padding:0.5rem;">Battery</th><th style="text-align:left;padding:0.5rem;">TX</th><th style="text-align:left;padding:0.5rem;">Block</th></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">B165</td><td style="padding:0.5rem;"><a href="https://sepolia.etherscan.io/tx/0x7980012af2dc9f87868e9ee1e63a2c0b112e63b1f9e516f5ab72ddcb4aa70b2d" style="color:#4af;">0x7980...0b2d</a></td><td style="padding:0.5rem;">10769331</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">B166</td><td style="padding:0.5rem;"><a href="https://sepolia.etherscan.io/tx/0x9ccb775c8974809dd49075dd1404a4f4f6d79a91635215b285cb2d3a3c1618a6" style="color:#4af;">0x9ccb...18a6</a></td><td style="padding:0.5rem;">10770018</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">B167</td><td style="padding:0.5rem;"><a href="https://sepolia.etherscan.io/tx/0x40d5fb08cc7c29cdb0a4e0000ef3eb3e0421de73f2765f4e8135cff0f99603b8" style="color:#4af;">0x40d5...03b8</a></td><td style="padding:0.5rem;">10775580</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">B168</td><td style="padding:0.5rem;"><a href="https://sepolia.etherscan.io/tx/0x7938c7d9764ad5ac7fc8d9423434c15ea2c6b487c9777cfdf81c22b5c4c51d97" style="color:#4af;">0x7938...1d97</a></td><td style="padding:0.5rem;">10776240</td></tr>
+        <tr><td style="padding:0.5rem;">B169</td><td style="padding:0.5rem;"><a href="https://sepolia.etherscan.io/tx/0xb983543a290f94f71be2f898902b99fbb025f0a645bc579eb928c15e9c110084" style="color:#4af;">0xb983...0084</a></td><td style="padding:0.5rem;">10778320</td></tr>
+      </table>
+    </section>
+    <!-- END B165-B169 ARC -->
 </body>
 </html>
+
 
 
 
