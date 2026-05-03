@@ -81,7 +81,7 @@
 <div class="wrap">
   <div class="topbar">
     <div><div class="proj-tag">PROJECT VATA</div><div class="dim2" style="font-size:11px;">SCTD-2026-001 // @LHMISME420</div></div>
-    <div class="topbar-right"><div>STATUS: <span class="accent">ACTIVE "” B126 RUNNING</span></div><div>LAST UPDATE: 2026-05-03</div><div>LATEST: <span class="accent">B169</span></div></div>
+    <div class="topbar-right"><div>STATUS: <span class="accent">ACTIVE "” B126 RUNNING</span></div><div>LAST UPDATE: 2026-05-03</div><div>LATEST: <span class="accent">B170</span></div></div>
   </div>
   <h1>PIPELINE DEFENSE<br/><span>LEADERBOARD</span> <span class="cursor"></span></h1>
   <div class="sub">Verifiable AI Trust Audit "” receipts over promises.<br/>B116-B125: Complete pipeline security arc. 6 models. 10 batteries. All findings anchored to Ethereum Sepolia before public disclosure.</div>
@@ -414,6 +414,28 @@
 <script>
 function showTab(name,el){document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.getElementById('tab-'+name).classList.add('active');el.classList.add('active');}
 </script>
+        <!-- B170 SCORER DIVERGENCE ARC -->
+    <section style="margin:2rem 0;padding:2rem;border:1px solid #333;background:#0a0a0a;">
+      <h2 style="color:#ff4444;">⚠ B170 FINDING — SCORER CONVERGENCE + PIPELINE POSITION</h2>
+      <p style="color:#aaa;">SCORER DIVERGENCE x ANCHOR DEPTH x PIPELINE POSITION &bull; B170 &bull; COMPLETE &bull; 2026-05-03</p>
+      <p style="color:#ccc;line-height:1.6;">Three independent scorers (Grok, Claude, GPT) evaluating the same responses produced an average divergence of only 0.28 out of a maximum possible 9.0 — confirming the discrimination ceiling finding is scorer-agnostic. Pipeline position had negligible effect (Direct avg 1.61 vs Terminal avg 1.67). Enumerated scope instructions produced perfect adversarial protection but zero legitimate compliance — the most extreme tradeoff recorded. More specific runtime instruction makes discrimination worse, not better. The architectural conclusion is bulletproof.</p>
+
+      <h3 style="color:#fff;margin-top:1.5rem;">B170 Key Results</h3>
+      <table style="width:100%;border-collapse:collapse;color:#ccc;">
+        <tr style="border-bottom:1px solid #333;"><th style="text-align:left;padding:0.5rem;">Finding</th><th style="text-align:left;padding:0.5rem;">Result</th><th style="text-align:left;padding:0.5rem;">Implication</th></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">Scorer Divergence</td><td style="padding:0.5rem;color:#00ff9d;">0.28 avg / 9.0 max</td><td style="padding:0.5rem;">Ceiling is scorer-agnostic. Finding holds regardless of evaluator.</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">Pipeline Position</td><td style="padding:0.5rem;color:#ff9c3a;">Direct 1.61 vs Terminal 1.67</td><td style="padding:0.5rem;">Upstream manipulation does not significantly degrade final node.</td></tr>
+        <tr style="border-bottom:1px solid #222;"><td style="padding:0.5rem;">Enumerated Anchor + GPT</td><td style="padding:0.5rem;color:#ff4444;">AdvAvg=3.0 LegAvg=0</td><td style="padding:0.5rem;">Most extreme tradeoff recorded. Specificity backfires.</td></tr>
+        <tr><td style="padding:0.5rem;">Architectural Conclusion</td><td style="padding:0.5rem;color:#ff4444;">CONFIRMED</td><td style="padding:0.5rem;">Runtime instruction cannot solve discrimination regardless of specificity.</td></tr>
+      </table>
+
+      <h3 style="color:#fff;margin-top:1.5rem;">Anchor Log — B170</h3>
+      <table style="width:100%;border-collapse:collapse;color:#ccc;">
+        <tr style="border-bottom:1px solid #333;"><th style="text-align:left;padding:0.5rem;">Battery</th><th style="text-align:left;padding:0.5rem;">TX</th><th style="text-align:left;padding:0.5rem;">Block</th></tr>
+        <tr><td style="padding:0.5rem;">B170</td><td style="padding:0.5rem;"><a href="https://sepolia.etherscan.io/tx/0xdd7cb7fe608c3503e05165975013a402eea03269a0a3c85dc19f8f9b35c042c9" style="color:#4af;">0xdd7c...42c9</a></td><td style="padding:0.5rem;">10782710</td></tr>
+      </table>
+    </section>
+    <!-- END B170 -->
     <!-- B165-B169 AGENTIC AUTHORIZATION ARC -->
     <section style="margin:2rem 0;padding:2rem;border:1px solid #333;background:#0a0a0a;">
       <h2 style="color:#ff4444;">⚠ B169 LANDMARK FINDING — DISCRIMINATION CEILING</h2>
