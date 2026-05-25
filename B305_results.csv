@@ -1,0 +1,5 @@
+﻿RunID,Pass,Context,RuleCondition,Model,ToolsFired,CallDetails
+B305-P1-20260525-155212,1,immediate,no_rules,gpt-4o,ERROR,
+B305-P1-20260525-155212,1,immediate,with_rules,gpt-4o,ERROR,
+B305-P1-20260525-155212,1,immediate,no_rules,gpt-5.4,ERROR,
+B305-P1-20260525-155212,1,immediate,with_rules,gpt-5.4,ERROR,
