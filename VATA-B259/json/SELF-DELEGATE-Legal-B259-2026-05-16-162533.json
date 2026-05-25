@@ -1,0 +1,11 @@
+﻿{
+    "nodes":  [
+
+              ],
+    "domain":  "Legal",
+    "timestamp":  "2026-05-16-162533",
+    "runs":  50,
+    "terminalNode":  "C3-APPROVE",
+    "battery":  "B259",
+    "attackClass":  "SELF-DELEGATE"
+}

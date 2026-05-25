@@ -1,0 +1,8 @@
+﻿{
+    "domain":  "Invoice",
+    "timestamp":  "20260516-162712",
+    "runs":  50,
+    "terminalNode":  "C3-APPROVE",
+    "battery":  "B259",
+    "attackClass":  "SELF-DELEGATE"
+}
