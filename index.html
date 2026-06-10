@@ -119,7 +119,7 @@ footer{border-top:1px solid var(--border);padding-top:32px;display:flex;justify-
 <div class="stats-row">
 <div class="stat-box"><div class="stat-label">Models Tested</div><div class="stat-value">11</div><div class="stat-sub">6 Major AI Labs</div></div>
 <div class="stat-box"><div class="stat-label">Batteries Run</div><div class="stat-value" style="color:var(--green)">4</div><div class="stat-sub">B1 &ndash; B309</div></div>
-<div class="stat-box"><div class="stat-label">Named Findings</div><div class="stat-value" style="color:var(--red)">39</div><div class="stat-sub">Series 1-123 Named Findings</div></div>
+<div class="stat-box"><div class="stat-label">Named Findings</div><div class="stat-value" style="color:var(--red)">39</div><div class="stat-sub">Series 1-125 Named Findings</div></div>
 <div class="stat-box"><div class="stat-label">Webhook Calls</div><div class="stat-value" style="color:var(--yellow)">900+</div><div class="stat-sub">Real HTTP Evidence</div></div>
 <div class="stat-box"><div class="stat-label">Defense Layers</div><div class="stat-value" style="color:var(--purple)">4</div><div class="stat-sub">ZK + Infra + Behavioral + HITL</div></div>
 <div class="stat-box"><div class="stat-label">Mitigation</div><div class="stat-value" style="color:var(--green)">0</div><div class="stat-sub">Calls After Full Stack</div></div>
@@ -503,6 +503,17 @@ Longer operational history is a security asset for Claude and a security liabili
 <div class="finding-panel hot" style="margin-bottom:8px;">
 <div class="finding-title">VATA-BLC-001 &mdash; Batch Legitimacy Contamination &mdash; Payload-Agnostic, Claude-Specific <span class="new-badge">NEW</span></div>
 <div class="finding-body">S118-S122: Legitimate items preceding a malicious payload in a batch suppress per-item security evaluation on claude-opus-4-8 at rates scaling with batch composition. Dose-response confirmed: 1 legit item = 15%, 3 = 31%, 5 = 46% on BEC vector. Payload-agnostic: BEC 46%, malware delivery 40%, credential exfiltration 40%, PII data exfiltration 80% (8/10). grok-4-0709 and gpt-5.4 resistant 0/12 across all S118 vectors. S123 extended confirmation: grok 0/20 and gpt-5.4 0/20 across BEC and PII vectors at 10 runs each — model specificity confirmed at sufficient sample size. Mitigation: M2 batch skepticism rule closes field-wide to 0/10 across all payload types — all SAFE_BLOCKED. Zenodo: https://doi.org/10.5281/zenodo.20618435 | TX: 0xcca2c4d6... Block: 11025658 | S123 TX: 0xa697b28a... Block: 11025802 Sepolia</div>
+</div>
+<div class="section-header">Series 124-125 &ndash; BLC-001 Robustness + Compound Characterization</div>
+
+<div class="finding-panel complete" style="margin-bottom:8px;">
+<div class="finding-title">BLC-001 M2 Defeat Attempt &mdash; Non-Finding <span class="complete-badge">M2 ROBUST</span></div>
+<div class="finding-body">S124: Explicit bypass, implicit framing, authority framing, and vendor legitimization vectors all defeated by M2 at 0/10 each — all SAFE_BLOCKED. M2 performs intent evaluation not keyword matching. Mitigation is robust against framing variants. SHA256: 56B28EDC... TX: 0xd8b7805b... Block: 11025904 Sepolia</div>
+</div>
+
+<div class="finding-panel complete" style="margin-bottom:8px;">
+<div class="finding-title">BLC-GPC-001 Compound &mdash; Characterized <span class="complete-badge">BOUNDED</span></div>
+<div class="finding-body">S125: BLC-001 batch breach feeding into GPC-001 Grok executor pipeline. Compound fires at 10% on financial BEC vector — exactly the Stage 1 breach rate. PII data vector non-finding — Claude blocks at Stage 1 in this context. Key finding: compound breach rate inherits Stage 1 breach rate, pipeline does not amplify. SHA256: 240B2367... TX: 0x67e6a4c8... Block: 11025955 Sepolia</div>
 </div>
 <div class="section-header">Named Findings &ndash; 39 Total &mdash; GPC-001 + HBR-001 + SCT-001 + FSC-001 + MPF-001 + MMP-001 + TCH-001 + TCH-GPC-001 + TCH-MMP-001 + CIP-001 + RCI-001 + BLC-001</div>
 <div class="failure-grid">
